@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contratos Empresariais em 2025 | Tipos, Cláusulas, Gestão e Reforma</title>
+  <meta name="description" content="Guia editorial e objetivo sobre contratos empresariais: tipos, cláusulas essenciais, gestão contratual com LGPD e impactos do PL 04/2025. Conteúdo informativo em conformidade com o Provimento 205/2021 da OAB." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* Padrão D — Editorial Minimal (revisado, paleta com referência ao tema contratos) */
+      --bg: #FFFFFF;
+      --ink: #0e1726;              /* texto principal */
+      --muted: #475569;            /* texto secundário */
+      --brand: #0F2741;            /* azul jurídico profundo */
+      --accent: #C5A46D;           /* dourado sutil (papel/assinatura) */
+      --line: #E6E8EF;             /* divisórias sutis */
+      --wrap: 1040px;              /* largura para leitura */
+      --radius: 12px;
+      --shadow: 0 8px 24px rgba(2,6,23,.06);
+      --h1: clamp(28px,3.6vw,44px);
+      --h2: clamp(22px,2.4vw,30px);
+      --h3: clamp(18px,1.6vw,20px);
+      --body: clamp(16px,1.05vw,18px);
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font: var(--body)/1.7 Inter,system-ui,Segoe UI,Arial,sans-serif}
+    a{color:var(--brand);text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+
+    /* HEADER minimal: logo + menu enxuto na mesma linha */
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+    .head{display:flex;align-items:center;gap:16px;padding:12px 0}
+    .brand{display:inline-flex;align-items:center;gap:10px}
+    .brand img{height:42px}
+    nav{margin-left:auto}
+    nav ul{display:flex;gap:8px;list-style:none;padding:0;margin:0}
+    nav a{display:inline-flex;align-items:center;padding:8px 10px;border-radius:10px;font-weight:700;color:#1e293b}
+    nav a:hover{background:#f3f4f6}
+    nav a.active{background:#eef2ff;color:#0f1a34}
+    .top-cta{display:flex;gap:8px;margin-left:10px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:10px;border:1px solid var(--line);font-weight:700;color:#0f1a34;background:#fff}
+    .btn:hover{border-color:#cbd5e1}
+    .btn-primary{border-color:transparent;background:var(--brand);color:#fff}
+
+    /* HERO editorial (sem badges, sem caixas chamativas) */
+    .hero{padding:56px 0 28px}
+    .hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}
+    h1{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:var(--h1);line-height:1.15;margin:0;color:#0b142b}
+    .lead{color:var(--muted);margin:12px 0 18px}
+    .meta{font-size:14px;color:#64748b}
+
+    /* Placeholders de imagem sóbrios (sem tracejado) */
+  .ph{border:none;background:none;box-shadow:none;padding:0;display:flex;align-items:center;justify-content:center;text-align:center}
+    .ph .cap{color:#64748b}
+    .ratio-16x9{aspect-ratio:16/9}
+    .ratio-3x2{aspect-ratio:3/2}
+
+    /* Seções com respiro claro */
+    section{padding:42px 0}
+    .section-title{font-family:"Source Serif 4",Georgia,serif;font-weight:700;font-size:var(--h2);line-height:1.2;margin:0 0 12px;color:#0b142b;border-left:4px solid var(--accent);padding-left:10px}
+    .muted{color:var(--muted)}
+
+    .grid{display:grid;gap:18px}
+    .grid>*{min-width:0}
+    .cols-2{grid-template-columns:1fr 1fr}
+    .cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px;overflow-wrap:anywhere}
+    .card h3{font-weight:700;font-size:var(--h3);margin:0 0 6px;color:#0b142b}
+    .list{margin:10px 0 0;padding-left:18px}
+    .list li{margin:6px 0;color:#1f2937}
+
+    /* Reforma cards (sem bullets) */
+    .reforma-grid{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+    .reforma-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+    .reforma-card h3{margin:0 0 6px;font-weight:700;font-size:var(--h3);color:#0b142b}
+
+    /* FAQ simples e elegante */
+    details{border-top:1px solid var(--line);padding:12px 0}
+    details:first-of-type{border-top:none}
+    summary{cursor:pointer;font-weight:700;color:#0f172a}
+    details[open] summary{color:#1B365D}
+    details p{margin:8px 0 0;color:#334155}
+
+    /* Formulário limpo */
+    form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    label{display:block;font-weight:700;color:#0b142b;margin-bottom:6px}
+    .control{position:relative}
+    input,select,textarea{width:100%;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px;font:16px/1.5 Inter,Arial,sans-serif;color:#0f172a;outline:none}
+    input:focus,select:focus,textarea:focus{border-color:#cbd5e1;box-shadow:0 0 0 3px rgba(2,6,23,.06)}
+    textarea{min-height:120px;resize:vertical}
+    .consent{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:#475569;margin-top:6px}
+    .consent input{width:16px;height:16px;margin-top:2px;accent-color:var(--brand)}
+
+    /* Social icons */
+    .socials{display:flex;gap:10px;margin-top:8px}
+    .socials a{display:inline-flex;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);align-items:center;justify-content:center;background:#fff}
+
+    /* Rodapé */
+    footer{background:#0b142b;color:#fff}
+    .footer{display:grid;gap:20px;grid-template-columns:1.6fr 1.2fr 1.6fr 1fr;padding:32px 0}
+    footer a{color:#fff}
+    .foot-note{border-top:1px solid #1f2a44;color:#fff;font-size:12px;padding:10px 0}
+    .socials--footer{display:flex;gap:10px;margin-top:8px}
+    .socials--footer a{display:inline-flex;width:40px;height:40px;border-radius:50%;align-items:center;justify-content:center}
+    .socials--footer svg{display:block}
+    .footer-sep{border-top:1px solid rgba(255,255,255,.2);margin:12px 0}
+    .maps-link{margin-top:6px}
+    .maps-link a{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid rgba(255,255,255,.85);border-radius:999px;color:#fff;background:transparent;text-decoration:none;font-weight:700;font-size:14px;transition:background .2s,border-color .2s,transform .05s}
+    .maps-link a:hover{background:rgba(255,255,255,.12);border-color:#fff}
+    .maps-link a:active{transform:translateY(1px)}
+    /* Força branco em qualquer texto do footer */
+    footer .list li{color:#fff}
+    footer p, footer h4, footer address{color:#fff}
+
+    /* WhatsApp flutuante */
+    .wa{position:fixed;right:18px;bottom:18px;z-index:60;display:inline-flex;width:56px;height:56px;border-radius:999px;background:#25D366;align-items:center;justify-content:center;box-shadow:0 8px 18px rgba(4,120,87,.35)}
+    .wa svg{color:#fff}
+
+    /* Responsivo */
+    @media (max-width: 980px){
+      .hero .grid,.cols-2{grid-template-columns:1fr}
+      nav ul{display:none}
+    }
+    @media (max-width: 640px){
+      .cols-3{grid-template-columns:1fr}
+      form .row{grid-template-columns:1fr}
+      .footer{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="wrap head">
+      <a href="https://www.marinhomendes.adv.br/" class="brand" aria-label="Site oficial Marinho Mendes" target="_blank" rel="noopener">
+  <img src="img/Logo5.jpg" alt="Logo Marinho Mendes" style="height:42px;max-width:180px;object-fit:contain;"/>
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="#tipos">Tipos</a></li>
+          <li><a href="#clausulas">Cláusulas</a></li>
+          <li><a href="#reforma">Reforma</a></li>
+          <li><a href="#gestao">Gestão & LGPD</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="top-cta">
+        <a class="btn" href="https://www.marinhomendes.adv.br/blog/contratos-empresariais-em-2025/" target="_blank" rel="noopener">Ver matéria no Blog</a>
+        <a class="btn btn-primary" href="https://wa.me/5519974100605" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="topo" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="grid">
+        <div>
+          <h1>Contratos Empresariais em 2025</h1>
+          <p class="lead">Tipos mais utilizados, cláusulas essenciais, gestão contratual com LGPD e impactos da proposta de reforma do Código Civil (PL 04/2025). Conteúdo objetivo e informativo, sem promessa de resultado (Provimento 205/2021, OAB).</p>
+          <p class="meta">Tópicos: desenho contratual, revisão preventiva, governança de documentos, privacidade e segurança da informação.</p>
+          <div class="advice" style="border:1px solid var(--line);background:linear-gradient(0deg,#fafafa,#fff);border-left:4px solid var(--brand);border-radius:10px;padding:12px;color:var(--ink);margin-top:8px"><strong>Por que ter um advogado presente?</strong> Contratos envolvem riscos financeiros, regulatórios e reputacionais. A atuação técnica <em>desde a negociação</em> evita assimetrias, antecipa incidentes (LGPD) e reduz litígios. Conte sempre com assessoria jurídica especializada.</div>
+        </div>
+        <figure class="ph ratio-16x9" aria-label="Imagem de capa sobre contratos">
+          <img src="img/laptop-3196481_1280.jpg" alt="Placeholder" style="width:100%;height:auto;max-width:2468px;border-radius:12px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,.07);margin:auto;display:block;"/>
+        </figure>
+      </div>
+    </section>
+
+    <!-- TIPOS -->
+    <section id="tipos">
+      <h2 class="section-title">Tipos de contratos empresariais</h2>
+      <div class="grid cols-3">
+        <article class="card"><h3>Prestação de serviços</h3><p>Terceirização (TI, consultoria, segurança). Definir SLA, níveis de qualidade, sigilo e titularidade do resultado.</p></article>
+        <article class="card"><h3>Compra e venda</h3><p>Garantia, logística, inspeção, risco na transferência e inadimplemento.</p></article>
+        <article class="card"><h3>Distribuição</h3><p>Exclusividade/território, metas, rescisão e devoluções.</p></article>
+        <article class="card"><h3>Franquia</h3><p>Uso de marca/know-how, royalties, suporte e concorrencial.</p></article>
+        <article class="card"><h3>Licenciamento</h3><p>Marcas, patentes, software/PI. Escopo, auditoria e violação.</p></article>
+        <article class="card"><h3>Parceria / Joint Venture</h3><p>Governança, aportes, responsabilidades, metas e exit.</p></article>
+        <article class="card"><h3>NDA</h3><p>Confidencialidade: finalidade, prazo, exceções e sanções.</p></article>
+        <figure class="ph ratio-3x2">
+          <img src="img/Captura de tela 2025-09-05 152236.png" alt="Imagem de apoio" style="width:100%;height:auto;max-width:1421px;border-radius:12px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,.07);margin:auto;display:block;"/>
+        </figure>
+        <article class="card"><h3>Observação</h3><p>Modelos híbridos são comuns. Adequar riscos ao caso concreto e ao ciclo de vida da operação.</p></article>
+      </div>
+    </section>
+
+    <!-- CLÁUSULAS ESSENCIAIS -->
+    <section id="clausulas">
+      <h2 class="section-title">Cláusulas essenciais</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <ul class="list">
+            <li>Identificação das partes e poderes/mandatos.</li>
+            <li>Objeto (escopo) e entregáveis mensuráveis.</li>
+            <li>Prazo, renovação e rescisão (com/sem ônus).</li>
+            <li>Preço, reajuste, tributos e retenções.</li>
+            <li>Obrigações, padrões de qualidade e SLA/KPIs.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <ul class="list">
+            <li>Confidencialidade, não concorrência e não aliciamento.</li>
+            <li>Responsabilidade civil, penalidades e limites.</li>
+            <li>LGPD: papéis, base legal, DPA, segurança e incidentes.</li>
+            <li>Propriedade intelectual e licença de uso.</li>
+            <li>Resolução de disputas (mediação/arbitragem/foro).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFORMA LEGAL -->
+    <section id="reforma">
+      <h2 class="section-title">Reforma do Código Civil — PL 04/2025</h2>
+      <div class="reforma-grid">
+        <div class="reforma-card">
+          <h3>Direção do texto</h3>
+          <p>Tendência de <strong>reforço da autonomia contratual</strong> e menor intervenção estatal nas relações entre empresários.</p>
+        </div>
+        <div class="reforma-card">
+          <h3>Oportunidades</h3>
+          <p>Maior previsibilidade para negociações entre pares; possibilidade de calibrar <em>risk sharing</em> e métricas de desempenho com mais liberdade.</p>
+        </div>
+        <div class="reforma-card">
+          <h3>Riscos práticos</h3>
+          <p>Expressões abertas (p.ex. “<em>equilíbrio material</em>”) podem gerar leituras divergentes até a consolidação jurisprudencial.</p>
+        </div>
+        <div class="reforma-card">
+          <h3>Como se preparar</h3>
+          <p>Revisão preventiva das cláusulas-chave, planos de contingência e documentação de negociação. <strong>Acompanhamento jurídico contínuo</strong> é essencial.</p>
+        </div>
+      </div>
+      <figure class="ph ratio-16x9" style="margin-top:12px">
+  <img src="img/9e8323ab-5848-45ef-a9ee-99178ebdaa96.png" alt="Gráfico/ilustração" style="width:100%;height:auto;max-width:1065px;border-radius:12px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,.07);margin:auto;display:block;"/>
+      </figure>
+    </section>
+
+    <!-- GESTÃO & LGPD -->
+    <section id="gestao">
+      <h2 class="section-title">Gestão contratual e LGPD</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Governança</h3>
+          <ul class="list">
+            <li>CMS: cadastro, versionamento e trilhas de auditoria.</li>
+            <li>Vencimentos e alertas de renovação.</li>
+            <li>Cláusulas‑padrão e anexos técnicos.</li>
+            <li>Auditorias internas e matriz de riscos.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Conformidade LGPD</h3>
+          <ul class="list">
+            <li>Papéis (controlador/operador) e bases legais.</li>
+            <li>DPA, segurança da informação e resposta a incidentes.</li>
+            <li>Transferência internacional e suboperadores.</li>
+            <li>Direitos dos titulares e prazos de atendimento.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h2 class="section-title">FAQ – Perguntas frequentes</h2>
+      <details>
+        <summary>Quais são os contratos empresariais mais usados?</summary>
+        <p>Os mais recorrentes são: <strong>prestação de serviços</strong>, <strong>compra e venda</strong>, <strong>distribuição</strong>, <strong>franquia</strong>, <strong>licenciamento</strong>, <strong>parceria/Joint Venture</strong> e <strong>NDA</strong>. A escolha depende do modelo de negócio (B2B, cadeia logística, PI envolvida), do <em>risk sharing</em> desejado e do grau de dependência entre as partes. Um advogado auxilia a mapear riscos e selecionar o tipo adequado.</p>
+      </details>
+      <details>
+        <summary>Posso firmar contrato sem advogado?</summary>
+        <p>É possível, mas eleva o risco de assimetria, omissões e cláusulas inválidas. A assessoria jurídica contribui na <strong>definição do escopo</strong>, <strong>matriz de responsabilidades</strong>, <strong>limites de responsabilidade</strong>, <strong>propriedade intelectual</strong>, <strong>LGPD</strong> (bases legais, DPA, incidentes), <strong>SLA/penalidades</strong> e <strong>métodos de resolução de conflitos</strong> (mediação/arbitragem). A revisão preventiva costuma ser muito menos custosa que litígios posteriores.</p>
+      </details>
+      <details>
+        <summary>O que muda com o PL 04/2025?</summary>
+        <p>A proposta sinaliza <strong>maior autonomia contratual</strong> entre empresários e intenção de reduzir a intervenção estatal, valorizando a simetria negocial. Por outro lado, termos como “equilíbrio material” são abertos, exigindo <strong>ajustes prudenciais</strong> nas minutas enquanto a jurisprudência se consolida. Um advogado acompanha o texto, orienta as adequações e documenta a negociação para reforçar a segurança jurídica.</p>
+      </details>
+      <details>
+        <summary>Preciso adequar meus contratos à LGPD?</summary>
+        <p>Sim, se houver <strong>dados pessoais</strong> (clientes, leads, funcionários, usuários). É necessário definir <strong>papéis</strong> (controlador/operador), <strong>base legal</strong>, firmar <strong>DPA</strong>, prever <strong>segurança da informação</strong>, <strong>resposta a incidentes</strong>, <strong>transferência internacional</strong> e prazos para direitos dos titulares. A orientação jurídica reduz riscos regulatórios e reputacionais.</p>
+      </details>
+      <details>
+        <summary>Como a gestão contratual reduz riscos?</summary>
+        <p>Com <strong>CMS</strong> (cadastro/versionamento), <strong>trilhas de auditoria</strong>, <strong>calendário de prazos/renovações</strong>, <strong>modelos padronizados</strong> e <strong>revisões periódicas</strong> diante de mudanças regulatórias ou de negócio. Um advogado garante coerência entre anexos técnicos, comunicação de alterações e governança documental.</p>
+      </details>
+      <details>
+        <summary>Qual a diferença entre um NDA e cláusula de confidencialidade?</summary>
+        <p>O <strong>NDA</strong> é um <em>contrato autônomo</em> (pode ser assinado antes da negociação) focado no sigilo das informações; a <strong>cláusula de confidencialidade</strong> integra um contrato maior (ex.: serviços, parceria). Em ambos, recomenda‑se definir finalidade, escopo, prazos, exceções, medidas de segurança e penalidades — com suporte jurídico para calibrar a redação ao caso concreto.</p>
+      </details>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <h2 class="section-title">Fale com o escritório</h2>
+      <div class="grid cols-2">
+        <form id="leadForm" class="card" novalidate>
+          <div class="row">
+            <div class="control">
+              <label for="nome">Nome</label>
+              
+              <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+            </div>
+            <div class="control">
+              <label for="email">E‑mail</label>
+              
+              <input id="email" name="email" type="email" placeholder="seu@email.com" required />
+            </div>
+          </div>
+          <div class="row">
+            <div class="control">
+              <label for="tel">Telefone/WhatsApp</label>
+              
+              <input id="tel" name="tel" type="tel" inputmode="tel" placeholder="(DDD) 90000‑0000" required />
+            </div>
+            <div class="control">
+              <label for="assunto">Assunto</label>
+              
+              <select id="assunto" name="assunto">
+                <option value="Revisão de contrato">Revisão de contrato</option>
+                <option value="Minuta personalizada">Minuta personalizada</option>
+                <option value="Reforma PL 04/2025">Reforma PL 04/2025</option>
+              </select>
+            </div>
+          </div>
+          <div class="control">
+            <label for="msg">Mensagem</label>
+            
+            <textarea id="msg" name="mensagem" placeholder="Conte resumidamente sua necessidade"></textarea>
+          </div>
+          <label class="consent"><input type="checkbox" required /> <span>Li a <a href="#">Política de Privacidade</a> e autorizo o contato para fins exclusivamente profissionais.</span></label>
+          <div style="display:flex;gap:8px;margin-top:6px">
+            <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+            <a class="btn" href="https://wa.me/5519974100605" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          </div>
+          <small class="muted">Atendimento: 08:30–18:00 (dias úteis) • Tel.: <a href="tel:+551938454946">(19) 3845‑4946</a> • E‑mail: <a href="mailto:adm@marinhomendes.adv.br">adm@marinhomendes.adv.br</a> • Site: <a href="https://www.marinhomendes.adv.br/" target="_blank">marinhomendes.adv.br</a></small>
+        </form>
+        <aside>
+        <figure class="ph ratio-3x2" aria-label="Foto institucional">
+          <img src="img/office-2820890_1280.jpg" alt="Foto institucional" style="width:100%;height:auto;max-width:1563px;border-radius:12px;object-fit:cover;box-shadow:0 4px 16px rgba(0,0,0,.07);margin:auto;display:block;"/>
+        </figure>
+          <div class="card" style="margin-top:12px">
+            <h3>Sobre o escritório</h3>
+            <p>Marinho Mendes Sociedade de Advogados atua em Direito Empresarial e Societário, com ênfase em contratos, governança e LGPD. Atuação ética, técnica e comunicação clara.</p>
+            <ul class="list">
+              <li>Modelagem contratual por tipo de operação.</li>
+              <li>Privacidade e proteção de dados desde a concepção (LGPD).</li>
+              <li>Integração com rotinas de CMS e auditorias internas.</li>
+            </ul>
+          </div>
+          <div class="socials" aria-label="Redes sociais">
+            <a href="https://www.facebook.com/marinhomendesadv" target="_blank" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z" stroke="#0F2741"/></svg>
+            </a>
+            <a href="https://www.instagram.com/marinhomendesadv" target="_blank" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="#0F2741"/><circle cx="12" cy="12" r="4" stroke="#0F2741"/><circle cx="17.5" cy="6.5" r="1" fill="#0F2741"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/marinho-mendes/" target="_blank" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.94 8.5v10H3.5v-10h3.44ZM5.22 3.5a2.06 2.06 0 1 1 0 4.12 2.06 2.06 0 0 1 0-4.12ZM20.5 13.06V18.5h-3.44v-4.62c0-1.1-.02-2.52-1.54-2.52-1.55 0-1.8 1.21-1.8 2.44v5.2H10.3v-10h3.3v1.37h.05c.46-.87 1.59-1.8 3.27-1.8 3.5 0 3.58 2.3 3.58 4.43Z" stroke="#0F2741"/></svg>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap footer">
+      <div>
+        <a href="https://www.marinhomendes.adv.br/" target="_blank" rel="noopener" style="color:#fff;text-decoration:none"><strong style="font-size:18px">Marinho Mendes Sociedade de Advogados</strong></a>
+        <p style="margin:10px 0 0">Atuação ética e técnica em Direito Empresarial e Societário, com ênfase em contratos, governança e LGPD.</p>
+        <div class="socials--footer" aria-label="Redes sociais">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/marinhomendesadv" target="_blank" aria-label="Facebook">
+            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <circle cx="20" cy="20" r="20" fill="#1877F2"/>
+              <path d="M22.8 29.2v-8.3h2.8l.4-3.3h-3.2v-2.1c0-.9.3-1.5 1.6-1.5h1.7V11c-.3 0-1.3-.1-2.5-.1-2.5 0-4.3 1.5-4.3 4.4v2.5h-2.9v3.3h2.9v8.3h3.5z" fill="#fff"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/marinhomendesadv" target="_blank" aria-label="Instagram">
+            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <circle cx="20" cy="20" r="20" fill="#E4405F"/>
+              <rect x="12" y="12" width="16" height="16" rx="5" fill="none" stroke="#fff" stroke-width="2"/>
+              <circle cx="20" cy="20" r="4.5" fill="none" stroke="#fff" stroke-width="2"/>
+              <circle cx="25.5" cy="14.5" r="1.5" fill="#fff"/>
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/company/marinho-mendes/" target="_blank" aria-label="LinkedIn">
+            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+              <circle cx="20" cy="20" r="20" fill="#0A66C2"/>
+              <path d="M14.5 16.5h-3.2v12h3.2v-12Zm-1.6-1.9c1 0 1.8-.8 1.8-1.8 0-1-.8-1.8-1.8-1.8-1 0-1.8.8-1.8 1.8 0 1 .8 1.8 1.8 1.8ZM29 22.2c0-3.6-1.9-5.3-4.5-5.3-2.1 0-3 1.1-3.5 1.9v-1.6h-3.2v12H21v-6.7c0-1.7.3-3.3 2.4-3.3 2.1 0 2.1 2 2.1 3.4v6.6H29v-8Z" fill="#fff"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <ul class="list" style="padding-left:16px">
+          <li>Horário: <strong>08:30–18:00</strong> (dias úteis)</li>
+          <li>Modalidade: presencial e on‑line</li>
+        </ul>
+        <h4 style="margin-top:10px">Contato</h4>
+        <ul class="list" style="padding-left:16px">
+          <li>Site: <a href="https://www.marinhomendes.adv.br/" target="_blank">marinhomendes.adv.br</a></li>
+          <li>E‑mail: <a href="mailto:adm@marinhomendes.adv.br">adm@marinhomendes.adv.br</a></li>
+          <li>WhatsApp: <a href="https://wa.me/5519974100605" target="_blank">(19) 97410‑0605</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Locais de atendimento</h4>
+        <p style="margin:6px 0 4px"><strong>Campinas</strong></p>
+        <address style="font-style:normal;">Av. Jose Rocha Bonfim, nº 214<br>Bloco J – Sala 228 – Edifício Milão, Praça Capital<br>Loteamento Center Santa Genebra<br>Campinas – São Paulo • CEP 13080‑650<br>Fone: <a href="tel:+551932090417">(19) 3209‑0417</a></address>
+        <div class="maps-link"><a href="https://www.google.com/maps/search/?api=1&query=Av.+Jose+Rocha+Bonfim%2C+214%2C+Bloco+J+Sala+228%2C+Edif%C3%ADcio+Mil%C3%A3o+Pra%C3%A7a+Capital%2C+Campinas+SP+13080-650" target="_blank" rel="noopener">Ver no Google Maps</a></div>
+        <div class="footer-sep"></div>
+        <p style="margin:10px 0 4px"><strong>Hortolândia</strong></p>
+        <address style="font-style:normal;">Rua Antônio Nelson Barbosa, nº 93<br>Bairro Jardim do Bosque<br>Hortolândia – São Paulo • CEP 13186‑231<br>Fone: <a href="tel:+551938454946">(19) 3845‑4946</a></address>
+        <div class="maps-link"><a href="https://www.google.com/maps/search/?api=1&query=Rua+Ant%C3%B4nio+Nelson+Barbosa%2C+93%2C+Jardim+do+Bosque%2C+Hortol%C3%A2ndia+SP+13186-231" target="_blank" rel="noopener">Ver no Google Maps</a></div>
+      </div>
+      <div>
+        <h4>Mapa</h4>
+        <ul class="list" style="padding-left:16px">
+          <li><a href="#tipos">Tipos</a></li>
+          <li><a href="#clausulas">Cláusulas</a></li>
+          <li><a href="#reforma">Reforma</a></li>
+          <li><a href="#gestao">Gestão & LGPD</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap foot-note">Conteúdo informativo, sem promessa de resultado, conforme Provimento 205/2021 da OAB. Honorários definidos em contrato. © 2025 Marinho Mendes Advocacia.</div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5519974100605" class="wa" aria-label="Fale no WhatsApp" title="Fale conosco no WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.52 3.48A11.9 11.9 0 0 0 12.03 0C5.45.03.11 5.38.14 11.96c.01 2.1.56 4.14 1.58 5.95L0 24l6.25-1.63a12 12 0 0 0 5.75 1.47h.05c6.58-.03 11.92-5.38 11.95-11.95A11.9 11.9 0 0 0 20.52 3.48Zm-8.49 18.4h-.04a9.98 9.98 0 0 1-5.08-1.39l-.36-.21-3.71.97.99-3.62-.24-.37a10.03 10.03 0 0 1-1.55-5.36C2.99 6.5 7.5 1.99 12.99 2h.04c2.67 0 5.18 1.04 7.07 2.93a9.93 9.93 0 0 1 2.92 7.1c-.02 5.5-4.53 9.91-9.99 9.85Zm5.75-7.46c-.31-.16-1.86-.92-2.14-1.02-.29-.11-.5-.16-.71.16-.21.31-.82 1.01-1 1.21-.18.19-.37.21-.69.05-.31-.16-1.33-.49-2.53-1.56-.94-.83-1.57-1.86-1.75-2.17-.18-.31-.02-.47.14-.63.14-.14.31-.37.47-.55.16-.18.21-.31.32-.53.11-.21.05-.39-.03-.55-.08-.16-.71-1.7-.97-2.33-.26-.63-.52-.55-.71-.56l-.6-.01c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.64s1.13 3.06 1.29 3.27c.16.21 2.23 3.4 5.4 4.77.75.32 1.34.5 1.8.64.76.24 1.46.21 2.01.13.61-.09 1.86-.76 2.12-1.49.26-.73.26-1.35.18-1.49-.08-.14-.29-.22-.61-.38Z" fill="#fff"/></svg>
+  </a>
+
+  <script>
+    // Scrollspy básico
+    const links = Array.from(document.querySelectorAll('header nav a[href^="#"]'));
+    const targets = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){
+          links.forEach(l=>l.classList.toggle('active', l.getAttribute('href') === `#${e.target.id}`));
+        }
+      })
+    },{rootMargin:'-52% 0px -46% 0px',threshold:0});
+    targets.forEach(t=>io.observe(t));
+
+    // Envio do formulário -> WhatsApp com mensagem
+    const form = document.getElementById('leadForm');
+    if(form){
+      form.addEventListener('submit',(e)=>{
+        e.preventDefault();
+        const fd = new FormData(form);
+        const nome = fd.get('nome')||''; const tel = fd.get('tel')||'';
+        const assunto = fd.get('assunto')||'Contratos Empresariais';
+        const texto = encodeURIComponent(`Olá, sou ${nome}. Assunto: ${assunto}.
+${fd.get('mensagem')||''}
+Telefone: ${tel}`);
+        window.open(`https://wa.me/5519974100605?text=${texto}`,'_blank');
+      })
+    }
+  </script>
+</body>
+</html>
